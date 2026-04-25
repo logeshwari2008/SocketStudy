@@ -55,7 +55,7 @@ Socket programming finds applications in various domains, including web developm
 ## Program:
 
 ##SERVER PROGRAM
-import socket
+```import socket
 
 # Create socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -83,10 +83,10 @@ conn.send(message.encode())
 
 # Close connection
 conn.close()
-server_socket.close()
+server_socket.close()```
 
 ##CLIENT SERVER
-import socket
+```import socket
 
 # Create socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -105,7 +105,7 @@ data = client_socket.recv(1024).decode()
 print("Server says:", data)
 
 # Close socket
-client_socket.close()
+client_socket.close()```
 
 ##Output:
 <img width="1836" height="242" alt="image" src="https://github.com/user-attachments/assets/5d312e41-3c31-442c-9153-83df3262f857" />
